@@ -1,0 +1,63 @@
+{
+  "web_less":{
+      "less": {
+          "files": {
+              "../asset/web_css/commons.css": "../asset/web_css/commons.less"
+          }
+      },
+      "watch":false
+  },
+  "web_css":{
+    "cssmin":{
+      "src":[
+          "../asset/web_css/css/common/global.css",
+          "../asset/web_css/css/common/common.css",
+      ],
+      "dest":"../asset/web_css/common.min.css"
+    },
+    "watch":false
+  },
+  "h5_css_min": {
+    "cssmin": {
+      "src": [
+        "../asset_h5/dev/css/global.css",
+        "../asset_h5/dev/css/menu.css",
+      ],
+      "dest":"../asset_h5/online/css/h5.css"
+    },
+    "watch":false
+  },
+  "h5_js_concat": {
+    "concat": {
+      "src": [
+        "../asset_h5/dev/js/toolkit.js",
+        "../asset_h5/dev/js/cookie.js",
+      ],
+      "dest":"../asset_h5/online/js/h5.js"
+    },
+    "uglify":true,
+    "watch":false
+  },
+  "h5_js_concat_1": {
+    "concat": {
+      "src": [
+        "../asset_h5/dev/js/DragSlider.js",
+        "../asset_h5/dev/js/NewSelector.js",
+      ],
+      "dest":"../asset_h5/online/js/DragSlider-NewSelector-Lightbox.js"
+    },
+    "uglify":false,
+    "watch":false
+  },
+  "web_js_concat":{
+      "concat":{
+          "src":[
+              "../asset/web_js/plugin/jquery-ui-1.10.4.custom.js",
+              "../asset/web_js/plugin/jquery-ui-timepicker-addon.js",
+          ],
+          "dest":"../asset/web_js/common.js"
+      },
+      "uglify":true,
+      "watch":false
+  }
+}
